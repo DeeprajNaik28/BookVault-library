@@ -62,6 +62,7 @@ The application is deployed across two separate Virtual Machines. The frontend V
 
 ## 📁 Project Structure
 
+```
 BookVault/
 │
 ├── books.json
@@ -81,34 +82,38 @@ BookVault/
 │
 └── .gitignore
 
+```
+
 ## 🔐 Access Control
 
 BookVault uses separate Google Cloud service accounts for the two applications.
 
 **Frontend**
 
-The frontend VM uses a service account with:
-
-Storage Object Viewer
+The frontend VM uses a service account with: Storage Object Viewer
 
 Permissions:
 
 Read     ✓
+
 Create   ✗
+
 Update   ✗
+
 Delete   ✗
 
 **Backend**
 
-The backend VM uses a service account with:
-
-Storage Object Admin
+The backend VM uses a service account with: Storage Object Admin
 
 Permissions:
 
 Read     ✓
+
 Create   ✓
+
 Update   ✓
+
 Delete   ✓
 
 This separation prevents the frontend application from directly modifying the stored data.
