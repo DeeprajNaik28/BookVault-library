@@ -33,30 +33,31 @@ The application is deployed across two separate Virtual Machines. The frontend V
                  │      API Requests   │
                  └────────────────────►│
 
+```
 
 ## ✨ Features
 
-📚 View available books
-🔎 Search books
-➕ Add new books
-🗑️ Delete books
-☁️ Google Cloud Storage based data storage
-🔐 IAM-based access control
-🐳 Dockerized frontend and backend
-🖥️ Separate Virtual Machines for frontend and backend
-🔄 Frontend-to-backend API communication
-🔒 Different permissions for frontend and backend
+- 📚 View available books
+- 🔎 Search books
+- ➕ Add new books
+- 🗑️ Delete books
+- ☁️ Google Cloud Storage based data storage
+- 🔐 IAM-based access control
+- 🐳 Dockerized frontend and backend
+- 🖥️ Separate Virtual Machines for frontend and backend
+- 🔄 Frontend-to-backend API communication
+- 🔒 Different permissions for frontend and backend
 
 ##🛠️ Technologies Used
 
-Frontend: HTML, CSS, JavaScript
-Backend: Node.js, Express.js
-Cloud Storage: Google Cloud Storage
-Cloud Platform: Google Cloud Platform
-Containers: Docker
-Virtual Machines: Google Compute Engine
-Authentication & Authorization: Google Cloud IAM
-Version Control: Git & GitHub
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express.js
+- Cloud Storage: Google Cloud Storage
+- Cloud Platform: Google Cloud Platform
+- Containers: Docker
+- Virtual Machines: Google Compute Engine
+- Authentication & Authorization: Google Cloud IAM
+- Version Control: Git & GitHub
 
 
 ## 📁 Project Structure
@@ -84,7 +85,7 @@ BookVault/
 
 BookVault uses separate Google Cloud service accounts for the two applications.
 
-- Frontend
+**Frontend**
 
 The frontend VM uses a service account with:
 
@@ -97,7 +98,7 @@ Create   ✗
 Update   ✗
 Delete   ✗
 
-- Backend
+**Backend**
 
 The backend VM uses a service account with:
 
@@ -113,7 +114,9 @@ Delete   ✓
 This separation prevents the frontend application from directly modifying the stored data.
 
 ## 🔄 Application Flow
-Reading Books
+
+**Reading Books**
+
 User
  ↓
 Frontend VM
@@ -123,7 +126,9 @@ Frontend Docker Container
 Google Cloud Storage
  ↓
 books.json
-Adding or Modifying Books
+
+**Adding or Modifying Books**
+
 User
  ↓
 Frontend
@@ -152,9 +157,9 @@ Backend VM
 
 The project uses:
 
-Google Compute Engine
-Google Cloud Storage
-Google Cloud IAM
-Cloud Storage Bucket
-Service Accounts
-VPC/Firewall networking
+- Google Compute Engine
+- Google Cloud Storage
+- Google Cloud IAM
+- Cloud Storage Bucket
+- Service Accounts
+- VPC/Firewall networking
