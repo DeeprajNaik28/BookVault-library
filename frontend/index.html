@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 BookVault</h1>
+    <p>Simple Cloud Book Library</p>
+</header>
+
+<main>
+
+    <section class="books-section">
+        <div class="section-header">
+            <h2>Available Books</h2>
+            <input
+                type="text"
+                id="search"
+                placeholder="Search books..."
+                oninput="searchBooks()"
+            >
+        </div>
+
+        <div id="books-container" class="books-grid">
+            <p>Loading books...</p>
+        </div>
+    </section>
+
+
+    <section class="add-section">
+
+        <h2>Add New Book</h2>
+
+        <form id="book-form">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Book Title"
+                required
+            >
+
+            <input
+                type="text"
+                id="author"
+                placeholder="Author"
+                required
+            >
+
+            <input
+                type="text"
+                id="category"
+                placeholder="Category"
+                required
+            >
+
+            <input
+                type="number"
+                id="year"
+                placeholder="Publication Year"
+                required
+            >
+
+            <button type="submit">
+                Add Book
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
