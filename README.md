@@ -48,7 +48,7 @@ The application is deployed across two separate Virtual Machines. The frontend V
 - 🔄 Frontend-to-backend API communication
 - 🔒 Different permissions for frontend and backend
 
-##🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: Node.js, Express.js
@@ -90,7 +90,7 @@ BookVault uses separate Google Cloud service accounts for the two applications.
 
 **Frontend**
 
-The frontend VM uses a service account with: Storage Object Viewer
+The frontend VM uses a service account with : Storage Object Viewer
 
 Permissions:
 
@@ -104,7 +104,7 @@ Delete   ✗
 
 **Backend**
 
-The backend VM uses a service account with: Storage Object Admin
+The backend VM uses a service account with : Storage Object Admin
 
 Permissions:
 
