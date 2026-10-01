@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = 3000;
 
-const BUCKET_NAME = "bookvault-books-508110";
+const BUCKET_NAME = "bookvault-books";
 const FILE_NAME = "books.json";
 
 const storage = new Storage();
